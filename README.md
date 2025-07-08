@@ -1,6 +1,11 @@
+# General description
+This app provide a way to simulate data over Modbus on 24h period.  
+To Configure the app , a csv file must be filed with block time and signal adress.
+The simulation start on application launch
+
 # CSV Configuration File Explanation
 
-This configuration files Data.csv is based on csv format file. this file time blocks where a boolean signal on modbus server is triggered (Read Coil)
+This configuration files Data.csv is based on csv format file. this file time blocks where a boolean signal on modbus server is triggered (Single Coil)
 
 ### Structure Overview Data.csv
 
