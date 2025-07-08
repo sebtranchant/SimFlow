@@ -35,7 +35,7 @@ namespace SimFlow
                 string? line = reader.ReadLine();
                 if (line == null) continue;
 
-                string[] values = line.Split(';');
+                string[] values = line.Split(',');
                 if (values.Length >= 3 &&
                     DateTime.TryParse(values[0], out DateTime start) &&
                     DateTime.TryParse(values[1], out DateTime stop))

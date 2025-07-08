@@ -17,7 +17,7 @@ namespace SimFlow
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            _monitor.LoadFromCsv("data.csv");
+            _monitor.LoadFromCsv("./data.csv");
 
             _monitor.StartTimeReached += (s, e) =>
             {
