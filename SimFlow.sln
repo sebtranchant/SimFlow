@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36212.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimFlow", "SimFlow\SimFlow.csproj", "{B68A467A-567B-4AE3-9492-14A7FC0783EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{9C8CB701-102D-CF49-A3E0-89AC09D42C2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B68A467A-567B-4AE3-9492-14A7FC0783EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68A467A-567B-4AE3-9492-14A7FC0783EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68A467A-567B-4AE3-9492-14A7FC0783EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68A467A-567B-4AE3-9492-14A7FC0783EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02CCA82D-3E5C-426D-9CE9-D1B79D6E48F6}
+	EndGlobalSection
+EndGlobal
