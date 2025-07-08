@@ -57,4 +57,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Build Artifacts
-        path: ${{ env.Wap_Project_Directory }}\bin\$(BuildConfiguration)\$(TargetFramework)  # Modify this path as per your build output directory
+        path: $env:Solution_Name\bin\$(BuildConfiguration)\$(TargetFramework)  # Modify this path as per your build output directory
