@@ -45,11 +45,14 @@ namespace SimFlow
                     
                 }
             }
+            _logger.LogInformation($"List of {Timeblocks.Count} TimeBlocks found");
+            
             foreach (var block in Timeblocks)
             {
-                _logger.LogInformation("List of TimeBlock configured");
                _logger.LogInformation(block.ToString());
+                
             }
+            _logger.LogInformation("End of List");
         }
         public void Start()
         {

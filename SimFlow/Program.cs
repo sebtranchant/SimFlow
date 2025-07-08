@@ -10,7 +10,13 @@ var host = Host.CreateDefaultBuilder(args)
         services.AddLogging(config =>
         {
             config.SetMinimumLevel(LogLevel.Information);
-            config.AddConsole();
+            
+            config.AddSimpleConsole(options =>
+            {
+                options.TimestampFormat = "[dd-MM-yyyy HH:mm:ss] ";
+                options.IncludeScopes = true;
+                options.SingleLine = true;
+            });
         });
 
         services.AddSingleton<Modbus>();
