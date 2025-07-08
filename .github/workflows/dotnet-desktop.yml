@@ -53,8 +53,9 @@ jobs:
     # - name: Create the app package
     #   run: msbuild $env:Wap_Project_Path /p:Configuration=$env:Configuration /p:AppxBundle=Always /p:Appx_Bundle_Platforms=x86|x64
 
+    # Upload build artifacts
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
         name: Build Artifacts
-        path: $env:Solution_Name\bin\$(BuildConfiguration)\$(TargetFramework)  # Modify this path as per your build output directory
+        path: SimFlow/bin/${{ matrix.configuration }}/net8.0/
