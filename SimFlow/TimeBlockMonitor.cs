@@ -41,6 +41,8 @@ namespace SimFlow
                     DateTime.TryParse(values[1], out DateTime stop))
                 {
                     short address = short.Parse(values[2]);
+                    start = start.ToUniversalTime();
+                    stop = stop.ToUniversalTime();
                     Timeblocks.Add(new TimeBlock(start, stop, address));
                     
                 }
