@@ -74,7 +74,7 @@ namespace SimFlow
         {
             lock (_lock)
             {
-                DateTime now = DateTime.Now;
+                DateTime now = DateTime.Now.ToUniversalTime();
 
                 foreach (var block in Timeblocks)
                 {

@@ -25,7 +25,7 @@ namespace SimFlow
 
         public override string ToString()
         {
-            return $"* Start time {StartTime.ToString("T")} / Stop time {StopTime.ToString("T")} / Adresse : {Address.ToString()} *";
+            return $"* Start time (UTC) {StartTime.ToString("T")} / Stop time (UTC) {StopTime.ToString("T")} / Adresse : {Address.ToString()} *";
         }
     
     
