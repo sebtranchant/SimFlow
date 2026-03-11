@@ -6,7 +6,7 @@ services:
     image: simflow:latest
     container_name: simflow
     volumes:
-      # map the data.csv from the project into the container so the app can read it
-      - ./SimFlow/SimFlow/data.csv:/SimFlow/data.csv:ro
+      # map the Config folder from the solution root into the container
+      - ./Config:/SimFlow/Config
     # you can override ENTRYPOINT or command here if needed
     # command: ["dotnet", "SimFlow.dll"]

@@ -1,8 +1,8 @@
-FROM mcr.microsoft.com/dotnet/sdk:9.0 as build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /SimFlow
 COPY . ./
-RUN dotnet restore
-RUN dotnet publish -o out
+RUN dotnet restore SimFlow/SimFlow.csproj
+RUN dotnet publish SimFlow/SimFlow.csproj -o out
 
 FROM mcr.microsoft.com/dotnet/runtime:9.0
 WORKDIR /SimFlow
