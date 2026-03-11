@@ -1,14 +1,11 @@
-FROM mcr.microsoft.com/dotnet/sdk:8.0 as build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 as build
 WORKDIR /SimFlow
-# Copy everything
 COPY . ./
-# Restore as distinct layers
 RUN dotnet restore
-# Build and publish a release
 RUN dotnet publish -o out
 
-# Build runtime image
-FROM mcr.microsoft.com/dotnet/runtime:8.0
+FROM mcr.microsoft.com/dotnet/runtime:9.0
 WORKDIR /SimFlow
 COPY --from=build /SimFlow/out .
-ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
+# ← change the DLL name to whatever your project actually produces
+ENTRYPOINT ["dotnet", "SimFlow.dll"]

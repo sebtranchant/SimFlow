@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  simflow:
+    build: .
+    image: simflow:latest
+    container_name: simflow
+    volumes:
+      # map the data.csv from the project into the container so the app can read it
+      - ./SimFlow/SimFlow/data.csv:/SimFlow/data.csv:ro
+    # you can override ENTRYPOINT or command here if needed
+    # command: ["dotnet", "SimFlow.dll"]
